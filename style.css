@@ -1,0 +1,269 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  line-height: 28px;
+  color: #6a6a6a;
+  font-size: 14px;
+  background-color: #eff2f1;
+  margin: 0;
+  padding-bottom: 250px;
+}
+
+nav {
+  background-color: #3b5d50;
+  padding: 25px 22px 0 12px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 1030;
+}
+
+nav div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Furni title and the dot next to it */
+.title {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 600;
+  height: 40px;
+  width: 85px;
+  text-decoration: none;
+}
+
+.dot {
+  color: #fff;
+  opacity: 0.4;
+  font-size: 32px;
+}
+
+/* Hide the checkbox */
+#menuToggle {
+  display: none;
+}
+
+/* Style the hamburger icon */
+.hamburger {
+  cursor: pointer;
+  font-size: 30px;
+  width: 35px;
+  opacity: 0.55;
+  padding-bottom: 3px;
+}
+
+/* Initially hide the menu */
+.menu {
+  display: none;
+  list-style-type: none;
+}
+
+.menu li {
+  padding: 2px 0 14px 12px;
+  display: flex;
+  justify-content: start;
+  font-size: 14px;
+  color: #ffffff;
+  opacity: 0.5;
+  font-weight: 500;
+}
+
+.menu .visited {
+  opacity: 1;
+  font-weight: 500;
+}
+
+.menu {
+  padding: 0;
+}
+
+/* Display the menu when the checkbox is checked */
+#menuToggle:checked + .hamburger + .menu {
+  display: block;
+  position: absolute;
+  top: 100%;
+  background-color: #3b5d50;
+  margin: 0;
+  left: 0;
+  right: 0;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.menu li a img {
+  padding-right: 20px;
+  padding-top: 12px;
+  padding-bottom: 14px;
+}
+
+.hero {
+  padding: 98px 0 98px 0;
+  background-color: #3b5d50;
+}
+
+.container {
+  background-color: #3b5d50;
+  color: #fff;
+  width: 390px;
+  padding: 5px 12px 0 12px;
+}
+
+.txt-main h1 {
+  line-height: 33.42px;
+  font-size: 27.85px;
+  margin-bottom: 31px;
+}
+
+.txt-main p {
+  opacity: 0.5;
+  padding-bottom: 22px;
+}
+
+.btn a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 30px;
+  padding: 15px 31px;
+}
+
+.shop-btn {
+  background-color: #f9bf29;
+  color: #2f2f2f;
+}
+
+.btn .exp-btn {
+  color: #fff;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  padding: 14px 30px;
+  margin-left: 4px;
+}
+
+.images-main {
+  padding-top: 60px;
+  position: relative;
+}
+
+.couch {
+  position: relative;
+  width: 90%;
+  z-index: 2;
+}
+
+.dots-light {
+  position: absolute;
+  width: 35%;
+  top: 13px;
+  right: 0;
+  z-index: 1;
+}
+
+@media (min-width: 768px) {
+  nav {
+    padding: 15px 20px 20px 36px;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .menu {
+    display: flex;
+    margin: 0;
+  }
+
+  .menu a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .enabled {
+    text-decoration: underline 5px solid #f9bf29;
+    text-underline-offset: 12px;
+  }
+
+  .menu li {
+    padding-right: 4px;
+  }
+
+  .cart {
+    margin-left: 16px;
+  }
+
+  .user {
+    margin-left: 40px;
+  }
+
+  .menu li a img {
+    padding-top: 15px;
+  }
+
+  .nav-list {
+    margin-bottom: 2px;
+  }
+
+  .txt-main h1 {
+    font-size: 33.52px;
+    margin-bottom: 30px;
+    line-height: 1.17;
+  }
+
+  .txt-main p {
+    width: 708px;
+  }
+
+  .container {
+    padding: 67px 15px 100px 36px;
+  }
+
+  .couch {
+    width: 185%;
+    padding-top: 1px;
+  }
+
+  .images-main {
+    max-width: 300%;
+  }
+
+  .dots-light {
+    width: 72%;
+    position: absolute;
+    right: -357px;
+  }
+}
+
+@media (min-width: 1200px) {
+  nav {
+    padding: 15px 0 20px 42px;
+  }
+
+  .menu li {
+    padding-right: 33px;
+  }
+
+  .user {
+    margin-left: 30px;
+  }
+
+  .txt-main h1 {
+    font-size: 40px;
+  }
+
+  .txt-main p {
+    width: 450px;
+  }
+}

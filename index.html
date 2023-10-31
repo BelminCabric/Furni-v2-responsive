@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Furni - Amel's bootcamp</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <div>
+        <!-- Main page title -->
+        <a href="#" class="title nav-list">Furni<span class="dot">.</span></a>
+        <!-- Hidden Checkbox -->
+        <input type="checkbox" id="menuToggle" />
+
+        <!-- Hamburger Icon wrapped inside a label, which when clicked will change the state of checkbox -->
+        <label for="menuToggle" class="hamburger">
+          <?xml version="1.0" encoding="utf-8"?>
+          <svg
+            width="35px"
+            height="35px"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M5 16.6L20 16.6"
+              stroke="#fff"
+              stroke-width="1.3"
+              stroke-linecap="round"
+            />
+            <path
+              d="M5 10.9L20 10.9"
+              stroke="#fff"
+              stroke-width="1.3"
+              stroke-linecap="round"
+            />
+            <path
+              d="M5 5.2L20 5.2"
+              stroke="#fff"
+              stroke-width="1.3"
+              stroke-linecap="round"
+            />
+          </svg>
+        </label>
+
+        <!-- Actual Menu -->
+        <ul class="menu" id="menu">
+          <li class="visited enabled nav-list"><a href="#">Home</a></li>
+          <li class="nav-list"><a href="#">Shop</a></li>
+          <li class="nav-list"><a href="#">About us</a></li>
+          <li class="nav-list"><a href="#">Services</a></li>
+          <li class="nav-list"><a href="#">Blog</a></li>
+          <li class="nav-list"><a href="#">Contact us</a></li>
+          <li class="visited">
+            <a href="#"
+              ><img
+                class="user"
+                style="padding-top: 13px"
+                src="images/user.svg"
+            /></a>
+            <a href="#"><img class="cart" src="images/cart.svg" /></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Start of First section with the couch -->
+    <div class="hero">
+      <div class="container">
+        <div class="txt-main">
+          <h1>
+            Modern Interior
+            <br />
+            <span class="title-second-row"> Design Studio </span>
+          </h1>
+          <p>
+            Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet
+            velit. Aliquam vulputate velit imperdiet dolor tempor tristique.
+          </p>
+        </div>
+        <p class="btn">
+          <a class="shop-btn" href="#">Shop Now</a>
+          <a class="exp-btn" href="#">Explore</a>
+        </p>
+        <div class="images-main">
+          <img class="couch" src="images/couch.png" />
+          <img class="dots-light" src="images/dots-light.svg" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
